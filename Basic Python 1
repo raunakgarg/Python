@@ -1,0 +1,123 @@
+In [2]: #My First Python Program:
+print ("Hello, Python World!")
+In [3]: #Listing 1-1. Example of correct indentation
+# Correct indentation
+print ("Programming is an important skill for Data Science")
+print ("Statistics is a important skill for Data Science")
+print ("Business domain knowledge is a important skill for Data Science")
+# Correct indentation, note that if statement here is an example of suites
+x = 1
+if x == 1:
+print ('x has a value of 1')
+else:
+print ('x does NOT have a value of 1')
+In [4]: #Listing 1-2. Example of incorrect indentation
+# incorrect indentation, program will generate a syntax error
+# due to the space character inserted at the beginning of second line
+print ("Programming is an important skill for Data Science")
+print ("Statistics is a important skill for Data Science")
+print ("Business domain knowledge is a important skill for Data Science")
+print("3")
+"3"
+"Business"
+In [5]: # incorrect indentation, program will generate a syntax error
+# due to the wrong indentation in the else statement
+x = 1
+if x == 1:
+print ('x has a value of 1')
+else:
+print ('x does NOT have a value of 1')
+Hello, Python World!
+Programming is an important skill for Data Science
+Statistics is a important skill for Data Science
+Business domain knowledge is a important skill for Data Science
+x has a value of 1
+Programming is an important skill for Data Science
+Statistics is a important skill for Data Science
+Business domain knowledge is a important skill for Data Science
+3
+Out[4]: 'Business'
+File "<ipython-input-5-7ced6810cc8b>", line 7
+print ('x does NOT have a value of 1')
+^
+IndentationError: expected an indented block
+4/10/2019 Untitled2
+localhost:8890/nbconvert/html/Untitled2.ipynb?download=false 2/3
+In [6]: #Basic Objects:
+#Listing 1-3. Code For Basic Object Types
+none = None # singleton null object
+boolean = bool(True)
+integer = 1
+Long = 3.14
+# float
+Float = 3.14
+Float_inf = float('inf')
+Float_nan = float('nan')
+# complex object type, note the usage of letter j
+Complex = 2+8j
+# string can be enclosed in single or double quote
+string = 'this is a string'
+me_also_string = "also me"
+In [7]: #List
+#all the items belong to ta list can be of different datatype
+List = [1, True, 'ML'] # Values can be changed
+list2 = ['India', 9999, 9.99, 'Amma',1000.99]
+list2[-1]
+list2[3]="replace"
+print(list2)
+print(list2[1:3])
+print(list2[-3:])
+print(list2 *2)
+#Tuple
+Tuple = (1, True, 'ML') # Values can not be changed
+tuple2 = ('India', 9999, 9.99, 'Amma',1000.99)
+tuple2
+tuple2[3]="test"
+tuple3 = ('Amma',1000.99)
+['India', 9999, 9.99, 'replace', 1000.99]
+[9999, 9.99]
+[9.99, 'replace', 1000.99]
+['India', 9999, 9.99, 'replace', 1000.99, 'India', 9999, 9.99, 'replace', 100
+0.99]
+---------------------------------------------------------------------------
+TypeError Traceback (most recent call last)
+<ipython-input-7-3977014869ea> in <module>
+16 tuple2 = ('India', 9999, 9.99, 'Amma',1000.99)
+17 tuple2
+---> 18 tuple2[3]="test"
+19 tuple3 = ('Amma',1000.99)
+TypeError: 'tuple' object does not support item assignment
+4/10/2019 Untitled2
+localhost:8890/nbconvert/html/Untitled2.ipynb?download=false 3/3
+In [8]: #Set
+Set = set([1,2,2,2,3,4,5,5]) # Duplicates will not be stored
+print(Set)
+b={'India', 'Hi','India'}
+print( b)
+In [13]: #dictionary
+# Use a dictionary when you have a set of unique keys that map to values
+Dictionary = {'a':'A', 2:'AA', True:1, False:0}
+#dictionary
+dict={}
+tinydict={1:'one', 2:'two', 3:'three'}
+print(tinydict.keys())
+print(tinydict.values())
+# lets print the object type and the value
+#print type(none), none
+#print type(boolean), boolean
+#print type(integer), integer
+#print type(Long), Long
+#print type(Float), Float
+#print type(Float_inf), Float_inf
+#print type(Float_nan), Float_nan
+#print type(Complex), Complex
+#print type(string), string
+#print type(me_also_string), me_also_string
+#print type(Tuple), Tuple
+#print type(List), List
+#print type(Set), Set
+#print type(Dictionary), Dictionary
+{1, 2, 3, 4, 5}
+{'Hi', 'India'}
+dict_keys([1, 2, 3])
+dict_values(['one', 'two', 'three'])
