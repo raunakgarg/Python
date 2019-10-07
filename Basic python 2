@@ -1,0 +1,150 @@
+#Listing 1-5. Example code for multiline statements
+# Example of implicit line continuation
+x = ('1' + '2' +
+'3' + '4')
+# Example of explicit line continuation
+y = '1' + '2' + \
+'11' + '12'
+weekdays = ['Monday', 'Tuesday', 'Wednesday',
+'Thursday', 'Friday']
+weekend = {'Saturday',
+'Sunday'}
+print ('x has a value of', x)
+print ('y has a value of', y)
+print (weekdays)
+print (weekend)
+In [2]: #Listing 1-6. Code example for multistatements on a single line
+import os; x = 'Hello'; print (x)
+In [3]: #Listing 1-7. Example code for arithmetic operators
+# Variable x holds 10 and variable y holds 5
+x = 10
+y = 5
+# Addition
+print ("Addition, x(10) + y(5) = ", x + y)
+# Subtraction
+print ("Subtraction, x(10) - y(5) = ", x - y)
+# Multiplication
+print ("Multiplication, x(10) * y(5) = ", x * y)
+# Division
+print ("Division, x(10) / y(5) = ",x / y)
+# Modulus
+print ("Modulus, x(10) % y(5) = ", x % y)
+# Exponent
+print ("Exponent, x(10)**y(5) = ", x**y)
+# Integer division rounded towards minus infinity
+print ("Floor Division, x(10)//y(5) = ", x//y)
+x has a value of 1234
+y has a value of 121112
+['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+{'Sunday', 'Saturday'}
+Hello
+Addition, x(10) + y(5) = 15
+Subtraction, x(10) - y(5) = 5
+Multiplication, x(10) * y(5) = 50
+Division, x(10) / y(5) = 2.0
+Modulus, x(10) % y(5) = 0
+Exponent, x(10)**y(5) = 100000
+Floor Division, x(10)//y(5) = 2
+4/11/2019 Untitled3
+localhost:8890/nbconvert/html/Untitled3.ipynb?download=false 2/4
+In [4]: #Listing 1-8. Example code for comparision/relational operators
+# Variable x holds 10 and variable y holds 5
+x = 10
+y = 5
+# Equal check operation
+print ("Equal check, x(10) == y(5) ", x == y)
+# Not Equal check operation
+print ("Not Equal check, x(10) != y(5) ", x != y)
+# Not Equal check operation
+#print ("Not Equal check, x(10) <>y(5) ", x<>y)
+# Less than check operation
+print ("Less than check, x(10) <y(5) ", x<y)
+# Greater check operation
+print ("Greater than check, x(10) >y(5) ", x>y)
+# Less than or equal check operation
+print ("Less than or equal to check, x(10) <= y(5) ", x<= y)
+# Greater than or equal to check operation
+print ("Greater than or equal to check, x(10) >= y(5) ", x>= y)
+In [5]: #Listing 1-9. Example code for assignment operators
+# Variable x holds 10 and variable y holds 5
+x = 5
+y = 10
+x += y
+print ("Value of a post x+=y is ", x)
+x *= y
+print ("Value of a post x*=y is ", x)
+x /= y
+print ("Value of a post x/=y is ", x)
+x %= y
+print ("Value of a post x%=y is ", x)
+x **= y
+print ("Value of x post x**=y is ", x)
+x //= y
+print ("Value of a post x//=y is ", x)
+Equal check, x(10) == y(5) False
+Not Equal check, x(10) != y(5) True
+Less than check, x(10) <y(5) False
+Greater than check, x(10) >y(5) True
+Less than or equal to check, x(10) <= y(5) False
+Greater than or equal to check, x(10) >= y(5) True
+Value of a post x+=y is 15
+Value of a post x*=y is 150
+Value of a post x/=y is 15.0
+Value of a post x%=y is 5.0
+Value of x post x**=y is 9765625.0
+Value of a post x//=y is 976562.0
+4/11/2019 Untitled3
+localhost:8890/nbconvert/html/Untitled3.ipynb?download=false 3/4
+In [6]: #Listing 1-10. Example code for bitwise operators
+# Basic six bitwise operations
+# Let x = 10 (in binary0000 1010) and y = 4 (in binary0000 0100)
+x = 10
+y = 4
+print (x >> y) # Right Shift
+print (x << y) # Left Shift
+print (x & y) # Bitwise AND
+print (x | y) # Bitwise OR
+print (x ^ y) # Bitwise XOR
+print (~x) # Bitwise NOT
+In [7]: #Listing 1-11. Example code for logical operators
+var1 = True
+var2 = False
+print('var1 and var2 is',var1 and var2)
+print('var1 or var2 is',var1 or var2)
+print('not var1 is',not var1)
+In [8]: #Listing 1-12. Example code for membership operators
+var1 = 'Hello world' # string
+var2 = {1:'a',2:'b'}# dictionary
+print('H' in var1)
+print('hello' not in var2)
+print(1 in var2)
+print('a' in var2)
+0
+160
+0
+14
+14
+-11
+var1 and var2 is False
+var1 or var2 is True
+not var1 is False
+True
+True
+True
+False
+4/11/2019 Untitled3
+localhost:8890/nbconvert/html/Untitled3.ipynb?download=false 4/4
+In [9]: #Listing 1-13. Example code for identity operators
+var1 = 5
+var1 = 5
+var2 = 'Hello'
+var2 = 'Hello'
+var3 = [1,2,3]
+var3 = [1,2,3]
+print(var1 is not var1)
+print(var2 is var2)
+print(var3 is var3)
+In [ ]:
+False
+True
+True
